@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #c77dff;
+}
+.container {
+  width: 700px;
+  height: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 6px;
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.394);
+  padding: 15px;
+  background-color: white;
+}
+@media (max-width: 1192px) {
+  .container {
+    width: 100%;
+  }
+}
+
+.container .search {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+  padding-bottom: 100px;
+}
+.container .search input[type="text"] {
+  width: 80%;
+  padding: 15px;
+  border: none;
+  border-bottom: #c77dff 3px solid;
+  outline: none;
+  caret-color: #c77dff;
+}
+.container .search span {
+  background-color: #c77dff;
+  color: white;
+  padding: 15px;
+  flex: 1;
+  text-align: center;
+  cursor: pointer;
+}
+.result {
+  padding: 20px;
+}
+.result .word {
+  display: flex;
+  align-items: center;
+}
+.result .word h2 {
+  font-weight: bold;
+  font-size: 30px;
+  width: 80%;
+}
+.result .word .audio {
+  flex: 1;
+  text-align: center;
+  cursor: pointer;
+}
+.result .sort {
+  color: #777;
+  font-size: 20px;
+}
+.result .meaning .explaintion {
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 1.7;
+  display: block;
+  padding: 10px;
+  color: #575a7b;
+}
+.result .meaning .example {
+  padding: 10px 20px 10px 20px;
+  margin-top: 20px;
+  border-left: #c77dff 5px solid;
+  color: black;
+  font-weight: bold;
+  display: block;
+}
